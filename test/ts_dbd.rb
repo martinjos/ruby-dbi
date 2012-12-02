@@ -7,8 +7,10 @@ require 'test/unit/ui/console/testrunner'
 
 if File.basename(Dir.pwd) == "test"
     $:.unshift('../lib')
+    $:.unshift('.')
 else
     $:.unshift('lib')
+    $:.unshift('test')
 end
 
 module Test::Unit::Assertions

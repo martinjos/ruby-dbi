@@ -2,6 +2,7 @@
 # test suite.
 Dir.chdir("..") if File.basename(Dir.pwd) == "test"
 $LOAD_PATH.unshift(Dir.pwd + "/lib")
+$LOAD_PATH.unshift(Dir.pwd + "/test")
 Dir.chdir("test") rescue nil
 
 require 'dbi/tc_columninfo'
